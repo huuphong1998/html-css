@@ -1,0 +1,19 @@
+include ./pug/mixins
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatiable" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title HTML CSS Master
+        link(rel="stylesheet" href="./app.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet")
+    body
+        .tour-list-container
+            .tour-list
+                +tourItem('./images/img1.png 2x', 'From $40', 'Thailands Ayutthaya Temples Cruise from Bangkok Thailands Ayutthaya Temples Cruise from Bangkok Thailands Ayutthaya Temples Cruise from Bangkok', 4.8, 12, '9 hours', 61)
+                +tourItem('./images/img2.png 2x', 'From $70', 'FLoating Markets Day Trip from Bangkok', 4.7, 15, '16 hours', 65)
+                +tourItem('./images/img3.png 2x', 'From $60', 'Bangkok Dinner Cruise on the Chao Phraya River', 4.9, 14, '20 hours', 68)
