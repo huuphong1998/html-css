@@ -1,4 +1,4 @@
-include ./pug/mixins.pug
+include ./pug/mixins
 
 doctype html
 html(lang="en")
@@ -7,14 +7,13 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatiable" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title HTML CSS Master
-        link(rel="stylesheet" href="./styles/popular.css")
+        link(rel="stylesheet" href="./app.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet")
     body
-        .container
-            .popular-list
-                +popularItem("https://plus.unsplash.com/premium_photo-1661929249555-0fa9921b6aef?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9wdWxhciUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D", "Sep 28 10:00 AM - 1:00 PM", "The Grand Palace", 4.8, 12)
-                +popularItem("https://images.unsplash.com/photo-1601000984289-556777587643?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9wdWxhciUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D", "May 20 09:00 AM - 2:00 PM", "Chatuchak Weekend", 4.9, 17)
-                +popularItem("https://plus.unsplash.com/premium_photo-1661962699053-3f216d2f4c48?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9wdWxhciUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D", "Oct 10 08:00 AM - 3:00 PM", "Wat Pho", 5.0, 30)
-                +popularItem("https://images.unsplash.com/photo-1735446918160-af0b896b7a89?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcHVsYXIlMjB0cmF2ZWx8ZW58MHx8MHx8fDA%3D", "Dec 16 07:00 AM - 4:00 PM", "Temple Of Dawn", 4.7, 14)
+        .tour-list-container
+            .tour-list
+                +tourItem('./images/img1.png 2x', 'From $40', 'Thailands Ayutthaya Temples Cruise from Bangkok Thailands Ayutthaya Temples Cruise from Bangkok Thailands Ayutthaya Temples Cruise from Bangkok', 4.8, 12, '9 hours', 61)
+                +tourItem('./images/img2.png 2x', 'From $70', 'FLoating Markets Day Trip from Bangkok', 4.7, 15, '16 hours', 65)
+                +tourItem('./images/img3.png 2x', 'From $60', 'Bangkok Dinner Cruise on the Chao Phraya River', 4.9, 14, '20 hours', 68)
