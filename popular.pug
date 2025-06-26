@@ -1,0 +1,20 @@
+include ./pug/mixins
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title HTML CSS Master
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="./styles/popular.css")
+    body
+        .container
+            .popular-list
+                +popularItem("https://plus.unsplash.com/premium_photo-1661929249555-0fa9921b6aef?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9wdWxhciUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D", "Sep 28 10:00 AM - 1:00 PM", "The Grand Palace", 4.8, 12)
+                +popularItem("https://images.unsplash.com/photo-1601000984289-556777587643?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9wdWxhciUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D", "May 20 09:00 AM - 2:00 PM", "Chatuchak Weekend", 4.9, 14)
+                +popularItem("https://images.unsplash.com/photo-1566682372561-2273e5226306?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9wdWxhciUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D", "Oct 16 08:00 AM - 3:00 PM", "Wat Pho", 5.0, 30)
+                +popularItem("https://images.unsplash.com/photo-1735446918160-af0b896b7a89?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcHVsYXIlMjB0cmF2ZWx8ZW58MHx8MHx8fDA%3D", "Dec 10 07:00 AM - 4:00 PM", "Temple Of Dawn", 4.7, 18)
