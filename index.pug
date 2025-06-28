@@ -48,7 +48,7 @@ html(lang="en")
                                     .diamond-content
                                         h3.diamond-title Bangkok Trip
                                         span.diamond-subtitle 27 Sep, 2025
-            a.button(href="#") Explore All
+                    a.button.diamond-all(href="#") Explore All
         footer.footer
             .container.footer-container
                 .footer-top
@@ -57,6 +57,10 @@ html(lang="en")
                             a.footer-logo(href="/")
                                 img(srcSet="./images/logo.png 2x", alt="Airtrav")
                             p.footer-desc Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.
+                            form.subscribe(action="" autocomplete)
+                                input.subscribe-email(type="email" placeholder="Enter your email")
+                                button.subscribe-button(type="submit")
+                                    img(srcSet="./images/arrow.png 2x", alt="icon-arrow-right")
                         .footer-column
                             h4.footer-heading Services
                             ul.footer-links
@@ -76,3 +80,9 @@ html(lang="en")
                                     li.footer-item
                                         a.footer-link(href="#")= val
                 .footer-bottom
+                    p.footer-copyright Copyright© 2025 UIHUT LLC. All rights reserved
+                    .footer-sn-list
+                        each s in ["./images/icon-fb.svg", "./images/icon-linkedin.svg", "./images/icon-twitter.svg", "./images/icon-instagram.svg"]
+                            .footer-sn-item
+                                a.footer-sn-link(href="#")
+                                    img(src= s, alt="img-social")
